@@ -1,0 +1,79 @@
+---
+title: "README"
+author: "Roxanne Ready"
+date: "11/6/2019"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+# Setup Knitr to display code output by default but suppress messages
+knitr::opts_chunk$set(echo = TRUE, paged.print = TRUE, message = FALSE)
+```
+
+```{r echo=FALSE, results='hide'}
+
+# Function
+library(tidyverse)
+
+# Form
+library(knitr)
+library(kableExtra)
+
+```
+
+# Homelessness Across the U.S.
+
+Data work for UMD's Howard Center for Investigative Journalism, fall 2019.
+
+*Created by Roxanne Ready (<http://roxanneready.com>)*
+
+*Reporter: Roxanne Ready*
+
+## Project goal
+
+This work was completed for UMD's Howard Center for Investigative Journalism as part of a large, collaborative project about the criminalization of homelessness in Baltimore and across the U.S.
+
+## Project notes
+
+### Staff involved
+
+* Kathy Best, Howard Center Director
+* Marty Kaiser, Howard Distinguished Visiting Fellow
+* Sean Mussenden, Data Bureau Chief
+* Deb Nelson, project lead
+* Roxanne Ready, data journalist
+* Theresa Diffendal, data journalist
+* Investigative journalism class, fall 2019
+
+### Data sources
+
+```{r echo=FALSE}
+
+tribble(
+  ~Data, ~Source, ~URL,
+  "Point in Time (PIT) homelessness count", "Dept. of Housing and Development", "https://www.hudexchange.info/programs/coc/coc-homeless-populations-and-subpopulations-reports/",
+  "Community of Care (CoC) cluster analysis", "Zillow", "https://www.zillow.com/research/data/",
+  "CoC-to-tract crosswalk", "Tom Byrne", "https://github.com/tomhbyrne/HUD-CoC-Geography-Crosswalk",
+  "Maryland court data", "scraped by CNS", "http://casesearch.courts.state.md.us/casesearch/"
+) %>%
+  kable(format="markdown")
+
+```
+
+## Technical
+
+*TK: Instructions on how to bootstrap project, run ETL processes, etc.*
+
+An outline of the basic project structure is available at https://github.com/associatedpress/cookiecutter-r-project
+
+### Project setup instructions
+
+After cloning the git repo:
+
+Open `homelessness-across-us.Rproj` in RStudio.
+
+## Data notes
+
+*Add important caveats, limitations, and source contact info here.*
