@@ -1,6 +1,3 @@
-*### Ignored large files
-/data/input-data/large-files/
-
 ### Ignored RStudio junk files
 # History files
 .Rhistory
@@ -71,15 +68,10 @@ Temporary Items
 .vim
 .DS_Store
 
-data/
-!data/documentation/.gitkeep
-!data/html_reports/.gitkeep
-!data/source/.gitkeep
-!data/handmade/.gitkeep
-!data/processed/.gitkeep
-!data/public/.gitkeep
+data/large-files/*
+!data/large-files/.gitkeep
 
-scratch/
+scratch/*
 !scratch/.gitkeep
 
 packrat/lib*/
