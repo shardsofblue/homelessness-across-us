@@ -1,5 +1,3 @@
-    ## Warning: package 'kableExtra' was built under R version 3.5.2
-
 Homelessness Across the U.S.
 ============================
 

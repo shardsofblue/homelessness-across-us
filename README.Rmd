@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE, paged.print = TRUE, message = FALSE)
 ```
 
-```{r echo=FALSE, results='hide'}
+```{r echo=FALSE, results='hide', warning=FALSE}
 
 # Function
 library(tidyverse)
