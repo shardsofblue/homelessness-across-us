@@ -38,17 +38,16 @@ library(kableExtra)
 
 ```{r include=FALSE, results='hide'}
 
-# Database connection information should be obfuscated for final output
 # Establish connection with database
 con <- dbConnect(MySQL(),
-              user="smussenden",
-              password="dUM1L0FTqnCdsbpJ",
+              user="USERNAME",
+              password="YOURPASSWORD",
               dbname='criminal_circuit_baltimore_city',
               host='clue.ctdfdskvfoc5.us-east-1.rds.amazonaws.com')
 
 con2 <- dbConnect(MySQL(),
-              user="smussenden",
-              password="dUM1L0FTqnCdsbpJ",
+              user="USERNAME",
+              password="YOURPASSWORD",
               dbname='civil_circuit_regular',
               host='clue.ctdfdskvfoc5.us-east-1.rds.amazonaws.com')
 
