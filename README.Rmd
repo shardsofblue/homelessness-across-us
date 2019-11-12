@@ -56,7 +56,7 @@ tribble(
   "Point in Time (PIT) homelessness count", "Dept. of Housing and Development", "https://www.hudexchange.info/programs/coc/coc-homeless-populations-and-subpopulations-reports/",
   "Community of Care (CoC) cluster analysis", "Zillow", "https://www.zillow.com/research/data/",
   "CoC-to-tract crosswalk", "Tom Byrne", "https://github.com/tomhbyrne/HUD-CoC-Geography-Crosswalk",
-  "Maryland court data", "scraped by CNS", "http://casesearch.courts.state.md.us/casesearch/"
+  "Baltimore court data", "scraped by CNS", "http://casesearch.courts.state.md.us/casesearch/"
 ) %>%
   kable(format="markdown")
 
@@ -64,7 +64,7 @@ tribble(
 
 ## Technical
 
-*TK: Instructions on how to bootstrap project, run ETL processes, etc.*
+PIT, cluster and crosswalk are available in this repo. Baltimore court data is too large to store here and is stored on Amazon Web Servers. Please contact the project manager for permission to access the dataset, then run `baltimore-court-data.Rmd` using your AWS username and password.
 
 An outline of the basic project structure is available at https://github.com/associatedpress/cookiecutter-r-project
 
@@ -76,4 +76,4 @@ Open `homelessness-across-us.Rproj` in RStudio.
 
 ## Data notes
 
-*Add important caveats, limitations, and source contact info here.*
+This data was intended for use by field reporters to narrow their initial reporting, but due to limitations in the data (especially data over time), **findings should not be included in final articles**. Limitations are discussed in more detail in the respective analyses files.
